@@ -1,12 +1,40 @@
 # vanila-javascript-boilerplate
 
 
-## setting
+## ⚙️ setting
 
 ### eslint & prettier
-
-___
-## config files
+#### 1. npm init
+```
+npm init
+```
+#### 2. install eslint
+```
+npm install eslint --save-dev
+```
+#### 3. eslint init
+```
+npx eslint --init
+```
+#### 4.(option)install style plugin
+- google
+```
+npm install --save-dev eslint-config-google
+```
+- airbnb
+```
+npm install --save-dev eslint-config-airbnb 
+```
+#### 5. install prettier
+```
+npm install --save-dev eslint-config-prettier
+```
+#### 6. install prettier plugin
+```
+npm install --save-dev eslint-plugin-prettier
+```
+#### 
+## 📜 config files
 
 ### .gitignore
 ```
