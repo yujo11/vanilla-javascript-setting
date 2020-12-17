@@ -43,10 +43,14 @@ node_modules/
 ```
 {
   "env": {
-    "browser": true
+    "browser": true,
+    "es2021": true
   },
   "extends": ["google", "plugin:prettier/recommended"],
   "plugins": ["prettier"],
+  "parserOptions": {
+    "sourceType": "module"
+  },
   "rules": {
     "no-new": "off",
     "no-alert": "off",
