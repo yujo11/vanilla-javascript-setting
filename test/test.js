@@ -1,27 +1,27 @@
-const testMaxDepth = () => {
+function testMaxDepth() {
   if (1) {
     if (1) {
       if (1) {
       }
     }
   }
-};
+}
 
-const testMaxLines = () => {
-  let test = 1;
-  test = 3;
-  test = 2;
-  test = 4;
-  test = 5;
-  test = 6;
-  test = 7;
-  test = 8;
-  test = 9;
-  test = 10;
-  test = 11;
-  test = 12;
-  test = 13;
-  test = 14;
-  test = 15;
-  test = 16;
-};
+function testMaxLines() {
+  num = 1;
+  num = 2;
+  num = 3;
+  num = 4;
+  num = 5;
+  num = 6;
+  num = 7;
+  num = 8;
+  num = 9;
+  num = 10;
+  num = 11;
+  num = 12;
+  num = 13;
+  num = 14;
+  num = 15;
+  num = 16;
+}
