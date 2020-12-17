@@ -45,7 +45,7 @@ node_modules/
   "env": {
     "browser": true
   },
-  "extends": ["google-base", "plugin:prettier/recommended"],
+  "extends": ["google", "plugin:prettier/recommended"],
   "plugins": ["prettier"],
   "rules": {
     "no-new": "off",
@@ -55,8 +55,10 @@ node_modules/
     "no-param-reassign": "off",
     "no-return-assign": "off",
     "import/extensions": "off",
-    "max-depth": ["error", 2],
+    "require-jsdoc": "off",
+    "max-depth": ["error", 1],
     "max-lines-per-function": ["error", 15]
   }
 }
+
 ```
