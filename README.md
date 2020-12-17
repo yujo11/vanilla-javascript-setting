@@ -6,34 +6,17 @@
 ### eslint & prettier
 ### 1. npm init
 ```
-npm init
+npm init -y
 ```
-### 2. install eslint
+### 2. install eslint, prettier, eslint-config-prettier, eslint-plugin-prettier
 ```
-npm install eslint --save-dev
+npm install eslint prettier eslint-config-prettier eslint-plugin-prettier --save-dev
 ```
-### 3. eslint init
+### 3. install eslint-config-google
 ```
-npx eslint --init
+npx install-peerdeps --dev eslint-config-google
 ```
-### 4.(option)install style config
-- google
-```
-npm install --save-dev eslint-config-google
-```
-- airbnb
-```
-npm install --save-dev eslint-config-airbnb 
-```
-### 5. install prettier config
-```
-npm install --save-dev eslint-config-prettier
-```
-### 6. install prettier plugin
-```
-npm install --save-dev eslint-plugin-prettier
-```
-#### 
+
 ## 📜 config files
 
 ### .gitignore
