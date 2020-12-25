@@ -16,7 +16,7 @@ npm install eslint prettier eslint-config-prettier eslint-plugin-prettier --save
 ```
 npx install-peerdeps --dev eslint-config-google
 ```
-### 3-2((optional). install eslint-config-airbnb-base
+### 3-2(optional). install eslint-config-airbnb-base
 ```
 npx install-peerdeps --dev eslint-config-airbnb-base
 ```
@@ -78,7 +78,7 @@ node_modules/
     "browser": true,
     "es2021": true
   },
-  "extends": ["google", "plugin:prettier/recommended"],
+  "extends": ["airbnb-base", "plugin:prettier/recommended"],
   "plugins": ["prettier"],
   "parserOptions": {
     "sourceType": "module"
