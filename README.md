@@ -8,9 +8,9 @@
 ```
 npm init -y
 ```
-### 2. install eslint, prettier, eslint-config-prettier, eslint-plugin-prettier
+### 2. install eslint, prettier, eslint-config-prettier, eslint-plugin-prettier, babel-eslint
 ```
-npm install eslint prettier eslint-config-prettier eslint-plugin-prettier --save-dev
+npm install eslint prettier eslint-config-prettier eslint-plugin-prettier babel-eslint --save-dev
 ```
 ### 3-1(optional). install eslint-config-google
 ```
@@ -57,6 +57,7 @@ node_modules/
     "sourceType": "module"
   },
   "rules": {
+    "parser": "babel-eslint"
     "no-new": "off",
     "no-alert": "off",
     "no-console": "off",
