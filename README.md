@@ -85,6 +85,7 @@ node_modules/
     "sourceType": "module"
   },
   "rules": {
+    "parser": "babel-eslint"
     "no-new": "off",
     "no-alert": "off",
     "no-console": "off",
