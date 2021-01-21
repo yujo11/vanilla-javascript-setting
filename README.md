@@ -57,7 +57,7 @@ node_modules/
     "sourceType": "module"
   },
   "rules": {
-    "parser": "babel-eslint"
+    "parser": "babel-eslint",
     "no-new": "off",
     "no-alert": "off",
     "no-console": "off",
@@ -85,7 +85,7 @@ node_modules/
     "sourceType": "module"
   },
   "rules": {
-    "parser": "babel-eslint"
+    "parser": "babel-eslint",
     "no-new": "off",
     "no-alert": "off",
     "no-console": "off",
