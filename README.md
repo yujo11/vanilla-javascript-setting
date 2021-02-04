@@ -8,9 +8,9 @@
 ```
 npm init -y
 ```
-### 2. install eslint, prettier, eslint-config-prettier, eslint-plugin-prettier, babel-eslint
+### 2. install eslint, prettier, eslint-config-prettier, eslint-plugin-prettier
 ```
-npm install eslint prettier eslint-config-prettier eslint-plugin-prettier babel-eslint --save-dev
+npm install eslint prettier eslint-config-prettier eslint-plugin-prettier --save-dev
 ```
 ### 3-1(optional). install eslint-config-google
 ```
@@ -46,10 +46,10 @@ node_modules/
 ### .eslintrc.json
 #### 3-1. google config
 ```
+
 {
   "env": {
-    "browser": true,
-    "es2021": true
+    "browser": true
   },
   "extends": ["google", "plugin:prettier/recommended"],
   "plugins": ["prettier"],
@@ -57,16 +57,13 @@ node_modules/
     "sourceType": "module"
   },
   "rules": {
-    "parser": "babel-eslint",
     "no-new": "off",
     "no-alert": "off",
-    "no-console": "off",
-    "no-plusplus": "off",
     "no-param-reassign": "off",
     "no-return-assign": "off",
     "import/extensions": "off",
-    "require-jsdoc": "off",
     "max-depth": ["error", 1],
+    "no-console": "off",
     "max-lines-per-function": ["error", 15]
   }
 }
@@ -76,8 +73,7 @@ node_modules/
 ```
 {
   "env": {
-    "browser": true,
-    "es2021": true
+    "browser": true
   },
   "extends": ["airbnb-base", "plugin:prettier/recommended"],
   "plugins": ["prettier"],
@@ -85,18 +81,14 @@ node_modules/
     "sourceType": "module"
   },
   "rules": {
-    "parser": "babel-eslint",
     "no-new": "off",
     "no-alert": "off",
-    "no-console": "off",
-    "no-plusplus": "off",
     "no-param-reassign": "off",
     "no-return-assign": "off",
     "import/extensions": "off",
-    "require-jsdoc": "off",
     "max-depth": ["error", 1],
+    "no-console": "off",
     "max-lines-per-function": ["error", 15]
   }
 }
-
 ```
