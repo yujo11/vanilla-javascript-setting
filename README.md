@@ -59,11 +59,11 @@ node_modules/
   "rules": {
     "no-new": "off",
     "no-alert": "off",
+    "no-console": "off",
     "no-param-reassign": "off",
     "no-return-assign": "off",
     "import/extensions": "off",
     "max-depth": ["error", 1],
-    "no-console": "off",
     "max-lines-per-function": ["error", 15]
   }
 }
@@ -83,11 +83,11 @@ node_modules/
   "rules": {
     "no-new": "off",
     "no-alert": "off",
+    "no-console": "off",
     "no-param-reassign": "off",
     "no-return-assign": "off",
     "import/extensions": "off",
     "max-depth": ["error", 1],
-    "no-console": "off",
     "max-lines-per-function": ["error", 15]
   }
 }
