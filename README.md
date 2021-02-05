@@ -12,13 +12,15 @@ npm init -y
 ```
 npm install eslint prettier eslint-config-prettier eslint-plugin-prettier --save-dev
 ```
-### 3-1(optional). install eslint-config-google
-```
-npx install-peerdeps --dev eslint-config-google
-```
-### 3-2(optional). install eslint-config-airbnb-base
+
+### 3(optional). install eslint-config-airbnb-base
 ```
 npx install-peerdeps --dev eslint-config-airbnb-base
+```
+
+### 4(optional). install cypress
+```
+npm install cypress 
 ```
 
 ## 📜 config files
@@ -44,32 +46,7 @@ node_modules/
 ```
 
 ### .eslintrc.json
-#### 3-1. google config
-```
 
-{
-  "env": {
-    "browser": true
-  },
-  "extends": ["google", "plugin:prettier/recommended"],
-  "plugins": ["prettier"],
-  "parserOptions": {
-    "sourceType": "module"
-  },
-  "rules": {
-    "no-new": "off",
-    "no-alert": "off",
-    "no-console": "off",
-    "no-param-reassign": "off",
-    "no-return-assign": "off",
-    "import/extensions": "off",
-    "max-depth": ["error", 1],
-    "max-lines-per-function": ["error", 15]
-  }
-}
-
-```
-#### 3-2. airbnb-base config
 ```
 {
   "env": {
@@ -80,13 +57,14 @@ node_modules/
   "parserOptions": {
     "sourceType": "module"
   },
+  "ignorePatterns": ["cypress/"],
   "rules": {
     "no-new": "off",
     "no-alert": "off",
-    "no-console": "off",
     "no-param-reassign": "off",
     "no-return-assign": "off",
     "import/extensions": "off",
+    "import/prefer-default-export": "off",
     "max-depth": ["error", 1],
     "max-lines-per-function": ["error", 15]
   }
