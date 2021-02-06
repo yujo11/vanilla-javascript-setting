@@ -23,6 +23,7 @@ npm install cypress
 ```
 
 ### 🚀 yarn
+#### 1. npm init
 
 ```
 npm init -y
