@@ -2,7 +2,7 @@
 
 
 ## ⚙️ setting
-### NPM
+### 🚀 NPM
 #### 1. npm init
 ```
 npm init -y
@@ -22,7 +22,7 @@ npx install-peerdeps --dev eslint-config-airbnb-base
 npm install cypress 
 ```
 
-### yarn
+### 🚀 yarn
 
 ```
 npm init -y
