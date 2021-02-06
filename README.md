@@ -2,26 +2,46 @@
 
 
 ## ⚙️ setting
-
-### eslint & prettier
-### 1. npm init
+### NPM
+#### 1. npm init
 ```
 npm init -y
 ```
-### 2. install eslint, prettier, eslint-config-prettier, eslint-plugin-prettier
+#### 2. install eslint, prettier, eslint-config-prettier, eslint-plugin-prettier
 ```
 npm install eslint prettier eslint-config-prettier eslint-plugin-prettier --save-dev
 ```
 
-### 3(optional). install eslint-config-airbnb-base
+#### 3(optional). install eslint-config-airbnb-base
 ```
 npx install-peerdeps --dev eslint-config-airbnb-base
 ```
 
-### 4(optional). install cypress
+#### 4(optional). install cypress
 ```
 npm install cypress 
 ```
+
+### yarn
+
+```
+npm init -y
+```
+#### 2. install eslint, prettier, eslint-config-prettier, eslint-plugin-prettier
+```
+yarn add eslint prettier eslint-config-prettier eslint-plugin-prettier --save-dev
+```
+
+#### 3(optional). install eslint-config-airbnb-base
+```
+npx install-peerdeps --dev eslint-config-airbnb-base
+```
+
+#### 4(optional). install cypress
+```
+yarn add cypress 
+```
+
 
 ## 📜 config files
 
