@@ -23,14 +23,14 @@ npm install cypress
 ```
 
 ### 🚀 yarn
-#### 1. npm init
+#### 1. yarn init
 
 ```
-npm init -y
+yarn init
 ```
 #### 2. install eslint, prettier, eslint-config-prettier, eslint-plugin-prettier
 ```
-yarn add eslint prettier eslint-config-prettier eslint-plugin-prettier --save-dev
+yarn add eslint prettier eslint-config-prettier eslint-plugin-prettier
 ```
 
 #### 3(optional). install eslint-config-airbnb-base
