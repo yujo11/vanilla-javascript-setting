@@ -30,12 +30,12 @@ yarn init
 ```
 #### 2. install eslint, prettier, eslint-config-prettier, eslint-plugin-prettier
 ```
-yarn add eslint prettier eslint-config-prettier eslint-plugin-prettier
+yarn add eslint prettier eslint-config-prettier eslint-plugin-prettier --dev
 ```
 
 #### 3(optional). install eslint-config-airbnb-base
 ```
-npx install-peerdeps --dev eslint-config-airbnb-base
+install-peerdeps eslint-config-airbnb-base --dev
 ```
 
 #### 4(optional). install cypress
