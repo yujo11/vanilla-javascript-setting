@@ -2,7 +2,7 @@
 
 
 ## ⚙️ setting
-### 🚀 NPM
+### 🚀 npm
 #### 1. npm init
 ```
 npm init -y
