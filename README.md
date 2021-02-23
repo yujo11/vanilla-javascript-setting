@@ -60,7 +60,10 @@ node_modules/
   "useTabs": false,
   "tabWidth": 2,
   "printWidth": 80,
+  "endOfLine": "auto",
   "singleQuote": true,
+  "rangeStart": 0,
+  "rangeEnd": Infinity,
   "arrowParens": "always",
   "trailingComma": "all"
 }
