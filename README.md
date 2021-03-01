@@ -40,7 +40,7 @@ install-peerdeps eslint-config-airbnb-base --dev
 
 #### 4(optional). install cypress
 ```
-yarn add cypress 
+yarn add cypress --dev
 ```
 
 
