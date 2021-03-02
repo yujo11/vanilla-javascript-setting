@@ -35,7 +35,7 @@ yarn add eslint prettier eslint-config-prettier eslint-plugin-prettier --dev
 
 #### 3(optional). install eslint-config-airbnb-base
 ```
-install-peerdeps eslint-config-airbnb-base --dev
+yarn add eslint-config-airbnb-base --dev
 ```
 
 #### 4(optional). install cypress
@@ -62,8 +62,6 @@ node_modules/
   "printWidth": 80,
   "endOfLine": "auto",
   "singleQuote": true,
-  "rangeStart": 0,
-  "rangeEnd": Infinity,
   "arrowParens": "always",
   "trailingComma": "all"
 }
