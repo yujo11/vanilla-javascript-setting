@@ -60,6 +60,7 @@ node_modules/
     "sourceType": "module"
   },
   "ignorePatterns": ["cypress/"],
+  "parser": "babel-eslint",
   "rules": {
     "no-new": "off",
     "no-alert": "off",
