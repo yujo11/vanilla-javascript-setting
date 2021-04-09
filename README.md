@@ -39,7 +39,7 @@ node_modules/
   "semi": true,
   "useTabs": false,
   "tabWidth": 2,
-  "printWidth": 80,
+  "printWidth": 120,
   "endOfLine": "auto",
   "singleQuote": true,
   "arrowParens": "always",
