@@ -174,3 +174,43 @@ insert_final_newline = true
 }
 ```
 
+#### (example)package.json
+
+```
+{
+  "name": "it-article-archive",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/yujo11/it-article-archive.git",
+  "author": {
+    "name": "yujo",
+    "email": "bedro27@gmail.com",
+    "url": "https://yujo11.github.io/"
+  },
+  "license": "MIT",
+  "scripts": {
+    "prod": "webpack serve --mode=production",
+    "dev": "webpack serve --mode=development",
+    "build": "webpack --mode=production"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/eslint-parser": "^7.13.14",
+    "@babel/preset-env": "^7.13.15",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.1",
+    "cypress": "^7.1.0",
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.4.1",
+    "prettier": "^2.2.1",
+    "semistandard": "^16.0.0",
+    "webpack": "^5.33.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
+
+```
