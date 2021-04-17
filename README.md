@@ -9,10 +9,10 @@
 yarn init
 ```
 
-### 2. install eslint, prettier, eslint-config-prettier, eslint-config-airbnb-base
+### 2. install eslint, prettier
 
 ```
-yarn add -D eslint prettier eslint-config-prettier eslint-config-airbnb-base
+yarn add -D eslint prettier eslint-config-prettier eslint-config-airbnb-base eslint-plugin-import
 ```
 
 ### 3. install webpack, webpack-dev-server
@@ -33,10 +33,46 @@ yarn add -D babel-loader css-loader mini-css-extract-plugin html-webpack-plugin
 yarn add -D @babel/core @babel/eslint-parser @babel/preset-env
 ```
 
+### 6. setting lint-staged & husky
+
+#### 6-1. install package
+
+```
+yarn add -D lint-staged husky
+```
+
+#### 6-2. add config in package.json
+
+```
+"lint-staged": {
+  "*.js": "eslint --cache",
+  "*.{js,css,md,html,json}": "prettier --write"
+},
+"husky": {
+  "hooks": {
+    "pre-commit": "lint-staged"
+  }
+},
+```
+
+#### 6-3. set husky
+
+```
+// 1. prepare husky
+yarn husky install
+
+// 2. add pre-commit
+npx husky add .husky/pre-commit "npx lint-staged"
+```
+
+
+
+
+
 ### (optional) install cypress
 
 ```
-yarn add cypress --dev
+yarn add -D cypress
 ```
 
 
@@ -184,7 +220,7 @@ insert_final_newline = true
   "url": "https://yujo11.github.io/"
 },
 "scripts": {
-  "test": yarn run cypress open
+  "test": "yarn run cypress open",
   "prod": "webpack serve --mode=production",
   "dev": "webpack serve --mode=development",
   "build": "webpack --mode=production"
