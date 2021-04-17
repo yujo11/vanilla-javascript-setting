@@ -3,41 +3,42 @@
 
 ## ⚙️ setting
 
-#### 1. yarn init
+### 1. yarn init
 
 ```
 yarn init
 ```
 
-#### 2. install eslint, prettier, eslint-config-prettier, semistandard
+### 2. install eslint, prettier, eslint-config-prettier, eslint-config-airbnb-base
 
 ```
-yarn add -D eslint prettier eslint-config-prettier semistandard
+yarn add -D eslint prettier eslint-config-prettier eslint-config-airbnb-base
 ```
 
-#### 3. install webpack, webpack-dev-server
+### 3. install webpack, webpack-dev-server
 
 ```
 yarn add -D webpack webpack-cli webpack-dev-server
 ```
 
-#### 4. install webpack plugins, loaders
+### 4. install webpack plugins, loaders
 
 ```
 yarn add -D babel-loader css-loader mini-css-extract-plugin html-webpack-plugin
 ```
 
-#### 5. install babel
+### 5. install babel
 
 ```
 yarn add -D @babel/core @babel/eslint-parser @babel/preset-env
 ```
 
-#### (optional) install cypress
+### (optional) install cypress
 
 ```
 yarn add cypress --dev
 ```
+
 
 
 ## 📜 config files
@@ -68,7 +69,7 @@ module.exports = {
     es2021: true,
   },
   parser: "@babel/eslint-parser",
-  extends: ["semistandard", "prettier"],
+  extends: ["airbnb-base", "prettier"],
   parserOptions: {
     ecmaVersion: 2021,
     sourceType: "module",
@@ -78,7 +79,7 @@ module.exports = {
 };
 ```
 
-#### webpack.config.js
+### webpack.config.js
 
 ```
 const path = require('path');
@@ -131,7 +132,7 @@ module.exports = (_, argv) => {
 };
 ```
 
-#### babel.config.js
+### babel.config.js
 
 ```
 module.exports = {
@@ -146,7 +147,7 @@ module.exports = {
 };
 ```
 
-#### .editorconfig
+### .editorconfig
 
 ```
 root = true
@@ -160,7 +161,7 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 ```
 
-#### .vscode/settings.json
+### .vscode/settings.json
 
 ```
 {
@@ -174,43 +175,18 @@ insert_final_newline = true
 }
 ```
 
-#### (example)package.json
+### package.json
 
 ```
-{
-  "name": "it-article-archive",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/yujo11/it-article-archive.git",
-  "author": {
-    "name": "yujo",
-    "email": "bedro27@gmail.com",
-    "url": "https://yujo11.github.io/"
-  },
-  "license": "MIT",
-  "scripts": {
-    "prod": "webpack serve --mode=production",
-    "dev": "webpack serve --mode=development",
-    "build": "webpack --mode=production"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.13.15",
-    "@babel/eslint-parser": "^7.13.14",
-    "@babel/preset-env": "^7.13.15",
-    "babel-loader": "^8.2.2",
-    "css-loader": "^5.2.1",
-    "cypress": "^7.1.0",
-    "eslint": "^7.24.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-config-prettier": "^8.2.0",
-    "html-webpack-plugin": "^5.3.1",
-    "mini-css-extract-plugin": "^1.4.1",
-    "prettier": "^2.2.1",
-    "semistandard": "^16.0.0",
-    "webpack": "^5.33.2",
-    "webpack-cli": "^4.6.0",
-    "webpack-dev-server": "^3.11.2"
-  }
-}
-
+"author": {
+  "name": "yujo",
+  "email": "bedro27@gmail.com",
+  "url": "https://yujo11.github.io/"
+},
+"scripts": {
+  "test": yarn run cypress open
+  "prod": "webpack serve --mode=production",
+  "dev": "webpack serve --mode=development",
+  "build": "webpack --mode=production"
+},
 ```
