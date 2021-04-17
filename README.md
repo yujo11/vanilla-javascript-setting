@@ -46,9 +46,9 @@ yarn add cypress --dev
 ### .gitignore
 
 ```
-node_modules/
-.vscode/
+node_modules
 .DS_Store
+.eslintcache
 ```
 
 ### .prettierrc.js
