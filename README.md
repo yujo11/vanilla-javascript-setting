@@ -41,30 +41,27 @@ yarn add -D @babel/core @babel/eslint-parser @babel/preset-env
 yarn add -D lint-staged husky
 ```
 
-#### 6-2. add config in package.json
+#### 6-2. add config
 
+- `package.json`
 ```
 "lint-staged": {
   "*.js": "eslint --cache",
   "*.{js,css,md,html,json}": "prettier --write"
 },
-"husky": {
-  "hooks": {
-    "pre-commit": "lint-staged"
-  }
-},
 ```
 
 #### 6-3. set husky
 
+- prepare husky
 ```
-// 1. prepare husky
 yarn husky install
+```
 
-// 2. add pre-commit
+- add pre-commit
+```
 npx husky add .husky/pre-commit "npx lint-staged"
 ```
-
 
 
 
