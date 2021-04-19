@@ -204,7 +204,8 @@ insert_final_newline = true
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "prettier.useEditorConfig": true
+  "prettier.useEditorConfig": true,
+  "prettier.enable": true,
 }
 ```
 
