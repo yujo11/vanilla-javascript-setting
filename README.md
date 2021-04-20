@@ -68,10 +68,18 @@ npx husky add .husky/pre-commit "npx lint-staged"
 
 ### (optional) install cypress
 
+- install cypress
 ```
 yarn add -D cypress
 ```
-
+- install eslint-plugin-cypress
+```
+yarn add -D eslint-plugin-cypress
+```
+- `.eslintrc.js` add config
+```
+plugins: ['cypress / recommended'],
+```
 
 
 ## 📜 config files
