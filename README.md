@@ -78,7 +78,7 @@ yarn add -D eslint-plugin-cypress
 ```
 - `.eslintrc.js` add config
 ```
-plugins: ['cypress / recommended'],
+extends: [plugin:cypress/recommended'],
 ```
 
 
